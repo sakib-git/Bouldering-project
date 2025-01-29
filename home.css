@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+main{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 5px;
+    font-family: sans-serif;
+}
+a:hover{
+    background-color: #087897a5;
+    padding: 4px;
+    border-radius: 3px;
+    color: white;
+}
+.pic img{
+    width: 700px;
+}
+h1{
+  font-size: 100px;
+    text-align: center;
+    &
+  strong{
+    color:#087997 ;
+  }
+}
+
+h2{
+    color:#cb731c ;
+}
+
+.parent-l-f{
+    display: flex;
+    gap: 30px;
+}
+
+.left{
+    width: 60%;
+
+    &
+    p{
+        font-size: 15px;
+        line-height: 25px;
+        color: #0000009e;
+        font-family: sans-serif;
+    }
+}
+
+.right img{
+    width: 300px;
+   
+}
+
+.middle p{
+    background: #087997;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.516);
+    padding: 5px;
+    font-size: 18px;
+}
+
+.middle {
+    border: 2px solid blue;
+}
+
+.middle strong{
+    color: white;
+}
+
+.parent-middle{
+    display: flex;
+    gap: 60px;
+}
+.middle-left img{
+    width: 300px;
+}
+
+h3{
+    color: #087997;
+}
+
+.middle-right{
+    font-size: 14.5px;
+    line-height: 22px;
+    color:rgba(0, 0, 0, 0.61);
+}
+
+.middle-right ul li{
+    list-style: circle;
+    line-height: 25px;
+}
+
+.end p {
+    width: 100%;
+    text-align: center;
+    background: #087997;
+    padding: 10px;
+    color: white;
+    font-size: 9px;
+    font-family: sans-serif;
+    border: 2px solid black;
+}
+
+@media (max-width: 520px) {
+    
+    main {
+        width: 90%; 
+        margin: 5px;
+    }
+    h1{
+        font-size: 50px;
+    }
+
+    .pic img {
+        max-width: 100%;
+        height: auto; }
+    .parent-l-f{
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    
+.left p {
+width: 180%;
+}
+
+h2{
+    font: 1.3em sans-serif;
+}
+
+
+.right img{
+    width: 100%;
+}
+
+.parent-middle{
+    flex-direction: column;
+}
+
+.middle-left img{
+    width: 100%;
+}
+
+.left{
+width: 50%;
+}
